@@ -85,12 +85,12 @@ public class FlowView extends ViewGroup {
         if (attrs != null) {
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.FlowView);
             if (a != null) {
-                mHorizontalAlign = a.getInt(R.styleable.FlowView_flow_horizontalAlign, mHorizontalAlign);
-                mVerticalAlign = a.getInt(R.styleable.FlowView_flow_verticalAlign, mVerticalAlign);
-                mFlowHeight = a.getDimension(R.styleable.FlowView_flow_height, mFlowHeight);
-                mHorizontalSpace = a.getDimension(R.styleable.FlowView_flow_horizontalSpace, mHorizontalSpace);
-                mVerticalSpace = a.getDimension(R.styleable.FlowView_flow_verticalSpace, mVerticalSpace);
-                mMaxRow = a.getInt(R.styleable.FlowView_flow_maxRow, mMaxRow);
+                mHorizontalAlign = a.getInt(R.styleable.FlowView_flow_view_horizontalAlign, mHorizontalAlign);
+                mVerticalAlign = a.getInt(R.styleable.FlowView_flow_view_verticalAlign, mVerticalAlign);
+                mFlowHeight = a.getDimension(R.styleable.FlowView_flow_view_height, mFlowHeight);
+                mHorizontalSpace = a.getDimension(R.styleable.FlowView_flow_view_horizontalSpace, mHorizontalSpace);
+                mVerticalSpace = a.getDimension(R.styleable.FlowView_flow_view_verticalSpace, mVerticalSpace);
+                mMaxRow = a.getInt(R.styleable.FlowView_flow_view_maxRow, mMaxRow);
                 a.recycle();
             }
         }
